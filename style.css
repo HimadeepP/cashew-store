@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1606787366850-de6330128bfc");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay {
+    background: rgba(255, 250, 243, 0.93);
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(90deg, #6b3e26, #a05a2c);
+    color: white;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.product {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6b3e26;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #d2691e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b35418;
+}
+
+.cart {
+    background: white;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

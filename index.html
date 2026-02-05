@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Royal Cashew Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay">
+
+<header>
+    <h1>🌰 GR Papa Cashew house</h1>
+    <p>Premium Flavoured Cashews – Fresh & Crunchy</p>
+</header>
+
+<section class="products">
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1604908177522-040a21fbfd1d">
+        <h3>Classic Whole Cashews</h3>
+        <p class="price">₹750 / kg</p>
+        <button onclick="addToCart('Classic Whole Cashews',750)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60">
+        <h3>Roasted Salted Cashews</h3>
+        <p class="price">₹820 / kg</p>
+        <button onclick="addToCart('Roasted Salted Cashews',820)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1587049352846-4a222e784c79">
+        <h3>Butter Cashews</h3>
+        <p class="price">₹860 / kg</p>
+        <button onclick="addToCart('Butter Cashews',860)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef">
+        <h3>Honey Roasted Cashews</h3>
+        <p class="price">₹880 / kg</p>
+        <button onclick="addToCart('Honey Roasted Cashews',880)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1615486364462-ef6363ad47aa">
+        <h3>Spicy Masala Cashews</h3>
+        <p class="price">₹890 / kg</p>
+        <button onclick="addToCart('Spicy Masala Cashews',890)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
+        <h3>Chocolate Cashews</h3>
+        <p class="price">₹950 / kg</p>
+        <button onclick="addToCart('Chocolate Cashews',950)">Add to Cart</button>
+    </div>
+
+</section>
+
+<section class="cart">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button onclick="orderWhatsApp()">Order via WhatsApp</button>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
