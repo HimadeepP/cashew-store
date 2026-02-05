@@ -32,9 +32,10 @@ function orderWhatsApp() {
     });
     message += `Total: ₹${total}`;
 
-    let phoneNumber = "919959433276"; 
+    let phoneNumber = "91XXXXXXXXXX"; 
     window.open(
         `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
         "_blank"
     );
+
 }
